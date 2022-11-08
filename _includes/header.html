@@ -1,7 +1,7 @@
 <div class="container header-container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
-      <h1>{{ site.name | escape }}</h1>
+      <h1><a href="/" >{{ site.name | escape }}</a></h1>
       <h2>{{ site.title | escape }}</h2>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
@@ -99,7 +99,7 @@
         {%- endif -%}
         {% for link in site.additional_links %}
           <li>
-            {% include a.html href=link.url class="button button--sacnite button--round-l" %}
+            {% include a.html href=link.url target=link.target internally=link.internally class="button button--sacnite button--round-l" %}
               <i class="{{ link.icon }}" title="{{ link.title | escape }}"></i>
             </a>
           </li>

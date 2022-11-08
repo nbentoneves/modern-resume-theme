@@ -170,3 +170,10 @@ If you have docker installed you can simply run `docker-compose up` to launch th
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## FAQ
+
+How to install eventmachine-1.2.7/ext at macos M1:
+```
+gem install eventmachine -- --with-openssl-dir=/usr/local/opt/openssl@1.1
+```
